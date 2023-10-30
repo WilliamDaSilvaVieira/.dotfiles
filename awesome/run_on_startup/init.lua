@@ -4,7 +4,7 @@ local cmd = {
   -- Compositor
   "picom",
   -- Blue light filter
-  "redshift -P -O 3400",
+  --"redshift -P -O 3400",
   -- Keep screen on
   "xset s off",
   "xset s off -dpms",

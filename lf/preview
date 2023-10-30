@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 image() {
     file=$1
@@ -13,8 +13,8 @@ image() {
     fi
 
     pistol "$file"
-
 }
+
 
 batorcat() {
     file="$1"

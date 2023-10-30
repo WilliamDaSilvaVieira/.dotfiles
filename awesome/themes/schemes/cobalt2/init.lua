@@ -17,6 +17,6 @@ cobalt2.taglist_bg_focus = cobalt2.bg_normal
 cobalt2.border_color_active = cobalt2.fg_normal
 cobalt2.border_color_normal = cobalt2.bg_normal
 
-cobalt2.wallpaper = themes_path .. "wallpapers/planet.jpg"
+cobalt2.wallpaper = themes_path .. "wallpapers/Anya.png"
 
 return cobalt2

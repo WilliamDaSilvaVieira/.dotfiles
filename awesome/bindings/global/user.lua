@@ -30,6 +30,15 @@ awful.keyboard.append_global_keybindings({
   }),
   awful.key({
     modifiers = { mod.super },
+    key = "g",
+    description = "open google-chrome",
+    group = "user",
+    on_press = function()
+      awful.spawn("google-chrome-stable")
+    end,
+  }),
+  awful.key({
+    modifiers = { mod.super },
     key = "y",
     description = "toggle bar",
     group = "user",
@@ -41,14 +50,14 @@ awful.keyboard.append_global_keybindings({
   awful.key({
     modifiers = { mod.super, mod.shift },
     key = "y",
-    description = "switch scale between 1 - 0.8",
+    description = "switch scale screen",
     group = "user",
     on_press = function()
       scale = not scale
       if scale then
-        awful.spawn("xrandr --output DP-0 --mode 3840x2160 --scale 1x1")
+        awful.spawn("xrandr --output HDMI-0 --mode 1920x1080 --rate 120.00 --scale 1x1")
       else
-        awful.spawn("xrandr --output DP-0 --mode 3840x2160 --scale 0.8x0.8")
+        awful.spawn("xrandr --output HDMI-0 --mode 3840x2160 --rate 60.00 --scale 1x1")
       end
     end,
   }),
