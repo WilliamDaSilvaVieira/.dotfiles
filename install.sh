@@ -1,7 +1,7 @@
 # Remove any existing config folders that can have a conflict
 cd ~/.config/
 rm awesome fish kitty helix picom starship.toml lf btop zathura MangoHud cava\
-	mpv rofi -rf
+	mpv rofi yazi -rf
 rm ~/media
 
 # Symlink everything
@@ -18,4 +18,5 @@ ln -s ~/.dotfiles/zathura/ ~/.config/
 ln -s ~/.dotfiles/MangoHud/ ~/.config/
 ln -s ~/.dotfiles/cava/ ~/.config/
 ln -s ~/.dotfiles/rofi/ ~/.config/
+ln -s ~/.dotfiles/yazi/ ~/.config/
 ln -s /run/media/$USER/ ~/media
