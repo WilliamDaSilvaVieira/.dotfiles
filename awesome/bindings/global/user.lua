@@ -25,7 +25,7 @@ awful.keyboard.append_global_keybindings({
     description = "open terminal file manager",
     group = "user",
     on_press = function()
-      awful.spawn(config.terminal .. " -e fish -c lf")
+      awful.spawn(config.terminal .. " -e fish -c yazi")
     end,
   }),
   awful.key({
