@@ -20,6 +20,13 @@ function h
     end
 end
 
+function nsync
+    cd $HOME/flake
+    nix flake update
+    nixos-rebuild build --flake .
+    doas ./result/bin/switch-to-configuration switch
+end
+
 fish_add_path $HOME/.cargo/bin/
 
 set fish_greeting
