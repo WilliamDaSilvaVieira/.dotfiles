@@ -22,9 +22,10 @@ end
 
 function nsync
     cd $HOME/flake
+    doas chown -R root .
     nix flake update
-    nixos-rebuild build --flake .
-    doas ./result/bin/switch-to-configuration switch
+    doas nixos-rebuild switch --flake .
+    doas chown -R william .
 end
 
 fish_add_path $HOME/.cargo/bin/
