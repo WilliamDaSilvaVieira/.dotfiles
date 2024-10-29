@@ -25,7 +25,7 @@ function nsync
     doas chown -R root .
     nix flake update
     doas nixos-rebuild switch --flake .
-    doas chown -R william .
+    doas chown -R $USER .
 end
 
 fish_add_path $HOME/.cargo/bin/
