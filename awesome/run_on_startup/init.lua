@@ -9,7 +9,9 @@ local cmd = {
   "xset s off",
   "xset s off -dpms",
   -- Faster keyboard rate
-  "xset r rate 300 60"
+  "xset r rate 300 60",
+  -- Resolution
+  "xrandr --output HDMI-0 --mode 3840x2160 --rate 60.00 --scale 0.75x0.75"
 }
 
 for i = 1, #cmd do
