@@ -22,6 +22,7 @@ end
 
 function nsync
     cd $HOME/flake
+    doas chmod -R go+rw .git/ overlays/ pkgs/ configuration.nix flake.lock flake.nix hardware-configuration.nix home.nix
     doas chown -R root .
     nix flake update
     doas nixos-rebuild switch --flake .
