@@ -23,6 +23,8 @@ end
 fish_add_path $HOME/.cargo/bin/
 
 set fish_greeting
+set -gx EDITOR helix
+set -gx VISUAL helix
 
 starship init fish | source
 
