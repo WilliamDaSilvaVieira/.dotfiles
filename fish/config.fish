@@ -14,9 +14,9 @@ end
 
 function h
     if test -n "$argv"
-        hx $argv
+        helix $argv
     else
-        hx (fzf)
+        helix (fzf)
     end
 end
 
