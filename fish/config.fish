@@ -20,15 +20,6 @@ function h
     end
 end
 
-function nsync
-    cd $HOME/flake
-    doas chmod -R go+rw .git/ home_manager/ nixos/ overlays/ pkgs/ flake.lock flake.nix nixpkgs.nix shell.nix
-    doas chown -R root .
-    nix flake update
-    doas nixos-rebuild switch --flake .
-    doas chown -R $USER .
-end
-
 fish_add_path $HOME/.cargo/bin/
 
 set fish_greeting
