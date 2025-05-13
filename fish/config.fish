@@ -20,7 +20,7 @@ function h
     end
 end
 
-fish_add_path $HOME/.cargo/bin/
+set -gx PATH ~/.cargo/bin $PATH
 
 set fish_greeting
 set -gx EDITOR helix
